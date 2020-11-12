@@ -1,0 +1,1173 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* Homeheader styling */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 200000;
+  height: 70px;
+  line-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(242, 242, 242);
+  border-bottom: 2px solid rgb(222, 222, 222);
+}
+.usingflex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.resbtn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background-color: white;
+  width: 35px;
+  height: 35px;
+  z-index: 10;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3px;
+  flex-direction: column;
+  outline: none;
+  transition: all 0.3s linear;
+}
+.resbtn::before,
+.resbtn::after {
+  content: "";
+}
+.resbtn span,
+.resbtn::before,
+.resbtn::after {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: gray;
+  border-radius: 100px;
+}
+.resbtn::after {
+  transform: translateY(-10px);
+}
+.resbtn::before {
+  transform: translateY(10px);
+}
+.navheading {
+  color: rgb(145, 145, 145);
+  text-transform: uppercase;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+}
+.navbarimg {
+  width: 100%;
+}
+.navspan {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px 0 30px;
+}
+.navbtn1 {
+  outline: none;
+  border: 2px solid skyblue;
+  padding: 5px 20px;
+  color: rgb(98, 150, 171);
+  border-radius: 3px;
+  background-color: white;
+  transition: all 0.2s linear;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+.navbtn2 {
+  text-decoration: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid skyblue;
+  padding: 5px 20px;
+  color: rgb(98, 150, 171);
+  border-radius: 3px;
+  margin: 0 30px 0 5px;
+  transition: all 0.2s linear;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+.myheart:active {
+  transform: scale(0.9);
+}
+.headerselling {
+  margin-top: 16px;
+  margin-right: 10px;
+  display: flex;
+}
+.belownavbtn2 {
+  border-radius: 50%;
+}
+.headercarticon10 {
+  position: absolute;
+  top: 8px;
+  right: 280px;
+}
+.headercarticon10:hover {
+  color: rgb(180, 218, 234);
+}
+.headercarticon10 span {
+  text-decoration: none;
+  position: absolute;
+  top: -20px;
+  right: 2px;
+  color: rgb(255, 157, 157);
+}
+.headercarticon101 {
+  position: absolute;
+  top: 8px;
+  right: 230px;
+}
+
+.headercarticon101:hover {
+  color: rgb(180, 218, 234);
+}
+.headercarticon101 span {
+  text-decoration: none;
+  position: absolute;
+  top: -20px;
+  right: 2px;
+  color: rgb(255, 157, 157);
+}
+
+.navbtn1:hover,
+.navbtn2:hover {
+  background-color: skyblue;
+  color: white;
+}
+.homebtndiv {
+  padding-right: 30px;
+}
+.headercarticon {
+  margin-right: 10px;
+  color: skyblue;
+  transition: all 0.2s linear;
+}
+.headercarticon2 {
+  position: absolute;
+  top: 8px;
+  right: 130px;
+}
+.headercarticon:hover {
+  color: rgb(180, 218, 234);
+}
+.headercarticon2 span {
+  text-decoration: none;
+  position: absolute;
+  top: -20px;
+  right: 2px;
+  color: rgb(255, 157, 157);
+}
+@media (max-width: 655px) {
+  .resbtn {
+    display: flex;
+  }
+  .responsive {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgb(176, 176, 176);
+    padding: 0 20px;
+    animation: fadein;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .responsive.close {
+    display: none;
+  }
+  .headercarticon10 {
+    position: absolute;
+    top: 10px;
+    right: 80px;
+  }
+  .headercarticon101 {
+    position: absolute;
+    top: 10px;
+    right: 80px;
+  }
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Homeheader styling */
+
+/* ===================================================================================================================================================================== */
+/* ===================================================================================================================================================================== */
+/* ===================================================================================================================================================================== */
+/* ===================================================================================================================================================================== */
+/* ===================================================================================================================================================================== */
+
+/* Secondnavbar styling */
+.snavbar {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  line-height: 45px;
+  background-color: rgb(223, 246, 255);
+}
+.snavbardiv {
+  margin-left: 30px;
+}
+.cate {
+  outline: none;
+  border: 2px solid gray;
+  padding: 7px 30px 7px 30px;
+  color: gray;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.1s linear;
+  border-radius: 3px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.cate:hover {
+  background-color: gray;
+  color: white;
+}
+
+.select {
+  margin-left: 10px;
+  padding: 8px 70px;
+  text-align: left;
+  border: 2px solid gray;
+  background-color: white;
+  position: relative;
+  transition: all 0.1s linear;
+  border-radius: 3px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.select:hover {
+  background-color: gray;
+  color: white;
+}
+.disp {
+  position: absolute;
+  top: -3px;
+  left: -7px;
+  background-color: rgb(240, 240, 240);
+  padding-top: 20px;
+  z-index: 20;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+/* .select:hover .disp {
+  display: block;
+} */
+.hide {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  border: 2px solid rgb(255, 164, 164);
+  background-color: white;
+  color: rgb(255, 164, 164);
+  padding: 7px 15px;
+  border-radius: 3px;
+  transition: all 0.1s linear;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+.hide:hover {
+  color: white;
+  background-color: rgb(255, 164, 164);
+}
+.ul {
+  list-style: none;
+  display: grid;
+  padding: 20px;
+  grid-template-columns: repeat(4, 220px);
+  grid-template-rows: repeat(1fr);
+  grid-gap: 25px 0px;
+  border-radius: 5px;
+}
+.ul h4 {
+  padding: 5px 0;
+  color: rgb(101, 101, 101);
+  margin-bottom: 5px;
+}
+.ul div li {
+  padding: 4px 0;
+}
+.ul div li a {
+  display: block;
+  font-size: 14px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: gray;
+}
+.ul div li a:hover {
+  color: blue;
+}
+.divs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+}
+
+/* Secondnavbar styling */
+
+/* ============================================================================================================================================================================================== */
+/* ============================================================================================================================================================================================== */
+/* ============================================================================================================================================================================================== */
+/* ============================================================================================================================================================================================== */
+/* ============================================================================================================================================================================================== */
+/* home component styling */
+.hero {
+  width: 100%;
+  height: 82vh;
+  position: relative;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.homeh1 {
+  margin-bottom: 35px;
+  color: rgb(199, 199, 199);
+  font-family: sans-serif;
+  font-size: 60px;
+}
+.homeh3 {
+  color: rgb(183, 183, 183);
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.homebtn {
+  outline: none;
+  background-color: skyblue;
+  border: 2px solid skyblue;
+  padding: 10px 30px;
+  color: white;
+  border-radius: 3px;
+  margin: 0 0px 0 5px;
+  transition: all 0.2s linear;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+.homebtn:hover {
+  background-color: white;
+  color: rgb(98, 150, 171);
+}
+.homeres {
+  width: 600px;
+}
+.homeres img {
+  width: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 656px) {
+  .hero {
+    padding-top: 60px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+  .homeh1 {
+    font-size: 48px;
+    margin-bottom: 26px;
+  }
+  .homeh3 {
+    font-size: 17px;
+  }
+  .cartheaderbtn {
+    margin: 10px 0;
+  }
+}
+
+/* home component styling */
+
+/* ============================================================================================================================================================================================== */
+/* ============================================================================================================================================================================================== */
+/* ============================================================================================================================================================================================== */
+/* ============================================================================================================================================================================================== */
+/* ============================================================================================================================================================================================== */
+
+/* loginauth styling */
+
+.loginauth {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000;
+  background: linear-gradient(90deg, skyblue 20%, white 20%);
+}
+.logindiv {
+  padding: 40px 20px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  background-color: gray;
+  border-radius: 5px;
+}
+.logindiv2 {
+  padding: 40px 20px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+  width: 400px;
+  background-color: rgb(184, 184, 184);
+}
+.logindiv2 h1 {
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 2px solid white;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+  color: white;
+}
+.logindiv2 h2 {
+  color: rgb(183, 227, 244);
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+.logindiv2 h3 {
+  color: rgb(111, 167, 189);
+  text-align: center;
+  margin-top: 20px;
+}
+.navbtn3 {
+  text-decoration: none;
+  outline: none;
+  border: 2px solid skyblue;
+  padding: 5px 20px;
+  margin: 30px auto 0 auto;
+  color: rgb(98, 150, 171);
+  border-radius: 3px;
+  margin: 0 20px 0 5px;
+  transition: all 0.2s linear;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+.navbtn3:hover {
+  background-color: skyblue;
+  color: white;
+}
+.aligncenter {
+  margin: 30px auto 0 auto;
+  text-align: center;
+}
+.loginh1 {
+  text-align: center;
+  color: rgb(232, 232, 232);
+  font-family: sans-serif;
+  margin-bottom: 30px;
+  border-bottom: 2px solid rgb(232, 232, 232);
+  padding-bottom: 15px;
+  text-transform: uppercase;
+}
+.secondrybtn {
+  text-align: center;
+  margin-top: 20px;
+}
+.divimage {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.loginimage {
+  border-radius: 50%;
+}
+/* loginauth styling ends */
+
+/* ===================================================================================================================================================================== */
+/* ===================================================================================================================================================================== */
+/* ===================================================================================================================================================================== */
+/* ===================================================================================================================================================================== */
+/* ===================================================================================================================================================================== */
+
+/* Ads stylings starts */
+
+.ads {
+  width: 100%;
+  padding: 20px 10px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.adscard {
+  padding: 5px 20px 10px 20px;
+  border-radius: 4px;
+  width: 280px;
+  height: 270px;
+  background-color: white;
+  margin: 12px 7px;
+  position: relative;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+  border-top: 1px solid rgb(216, 216, 216);
+  border-left: 1px solid rgb(216, 216, 216);
+}
+.productimagediv {
+  width: 100%;
+}
+.productimagediv img {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+}
+.heartdiv {
+  position: absolute;
+  bottom: 68px;
+  color: rgb(255, 124, 124);
+  right: 20px;
+}
+.adscardcontent {
+  padding-top: 5px;
+}
+.adscardcontent .nthchild1 {
+  display: block;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(142, 154, 159);
+  margin-bottom: 10px;
+}
+.nthchild1:hover {
+  color: rgb(191, 191, 191);
+  text-decoration: underline;
+}
+.adscardcontent .nthchild2 {
+  text-decoration: none;
+  color: rgb(117, 146, 159);
+}
+.nthchild2:hover {
+  color: rgb(115, 171, 193);
+  text-decoration: underline;
+}
+
+.sho {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.adsfrom {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: gray;
+}
+/* Ads stylings end */
+
+/* ===================================================================================================================================================================== */
+/* ===================================================================================================================================================================== */
+/* ===================================================================================================================================================================== */
+/* ===================================================================================================================================================================== */
+/* ===================================================================================================================================================================== */
+
+/* showproduct styling starts */
+
+.shoproduct {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  flex-direction: row;
+}
+.showimage {
+  /* margin-bottom: 50px; */
+  width: 700px;
+  height: 500px;
+  margin-right: 40px;
+}
+
+.showimage img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.showcontent {
+  width: 400px;
+  background-color: rgba(0, 0, 0, 0.057);
+  padding: 40px 30px;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+.showcontent h1 {
+  color: rgb(186, 186, 210);
+  margin-bottom: 20px;
+}
+.showcontent h3 {
+  color: rgb(186, 186, 210);
+}
+.shoeaddtocartbtn {
+  width: 100%;
+  text-align: center;
+  border: 2px solid skyblue;
+  transition: all 0.2s linear;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: white;
+  margin-top: 30px;
+  font-weight: bold;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  color: skyblue;
+  outline: none;
+}
+.shoeaddtocartbtn:hover {
+  color: white;
+  background-color: skyblue;
+}
+.heartdiv2 {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: rgb(255, 118, 118);
+}
+.heartdiv2:active {
+  transform: scale(0.9);
+}
+.showshipper {
+  width: 400px;
+  padding: 20px 30px;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+  margin-top: 15px;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.057);
+}
+.showshipper h3 {
+  color: rgb(180, 180, 188);
+  margin-bottom: 15px;
+}
+.showshipper h4 {
+  color: rgb(182, 182, 189);
+}
+.showdetails {
+  width: 400px;
+  padding: 20px 30px;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+  margin-top: 15px;
+  background-color: rgba(0, 0, 0, 0.057);
+}
+.showdetails h2 {
+  color: rgb(154, 154, 160);
+  margin-bottom: 15px;
+}
+.showdetails h4 {
+  color: rgb(182, 182, 189);
+}
+.showgobackbutton {
+  margin-top: 10px;
+  padding: 10px 20px;
+  color: rgb(255, 116, 116);
+  border: 2px solid rgb(255, 116, 116);
+  background-color: white;
+  border-radius: 4px;
+  transition: all 0.1s linear;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  outline: none;
+  font-weight: bold;
+}
+.showgobackbutton:hover {
+  background-color: rgb(255, 116, 116);
+  color: white;
+}
+.carticon {
+  position: absolute;
+  right: 55px;
+  color: rgb(139, 207, 234);
+  bottom: 68px;
+  cursor: pointer;
+}
+.carticon:hover {
+  color: rgb(118, 183, 208);
+}
+.shown {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 20px;
+}
+@media (max-width: 900px) {
+  .shoproduct {
+    flex-direction: column;
+  }
+  .showimage {
+    margin-right: 0;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+  }
+  .shown {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px 0 20px;
+  }
+  .showcontent {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.057);
+    padding: 40px 30px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+    position: relative;
+  }
+  .showdetails {
+    width: 100%;
+    padding: 20px 30px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+    margin-top: 15px;
+    background-color: rgba(0, 0, 0, 0.057);
+  }
+  .showshipper {
+    width: 100%;
+    padding: 20px 30px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+    margin-top: 15px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.057);
+  }
+}
+
+/* shoproduct styling ends */
+
+/* ===================================================================================================================================================================== */
+/* ===================================================================================================================================================================== */
+/* ===================================================================================================================================================================== */
+/* ===================================================================================================================================================================== */
+/* ===================================================================================================================================================================== */
+
+/* cart styling starts */
+
+.cartmain {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.shoproduct2 {
+  width: 1100px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3), -3px -3px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  padding: 35px 20px;
+  border-radius: 5px;
+  margin: 15px 20px;
+  position: relative;
+}
+
+.showimage2 {
+  width: 400px;
+  text-align: center;
+  height: 200px;
+  margin-right: 20px;
+}
+.showimage2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.showcontent2 h1 {
+  margin-bottom: 18px;
+  margin-top: 10px;
+  color: rgb(190, 205, 211);
+  text-transform: uppercase;
+}
+.showcontent2 .h4 {
+  color: gray;
+  font-weight: lighter;
+  margin: 5px 0;
+  font-family: sans-serif;
+}
+.cartcross {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: rgb(251, 87, 87);
+}
+.cartcross:hover {
+  color: rgb(255, 161, 161);
+}
+.cartquantity {
+  position: absolute;
+  bottom: 110px;
+  right: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+.cartquantity span {
+  margin: 6px 0;
+  color: gray;
+}
+.dec {
+  color: rgb(255, 108, 108);
+}
+.inc {
+  color: rgb(81, 81, 255);
+}
+.cartempty {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.empty {
+  color: rgb(165, 165, 165);
+  padding: 20px 40px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+}
+.cartheadersec2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.cartheadersec2 h3 {
+  display: inline-block;
+  color: gray;
+  margin-right: 40px;
+}
+@media (max-width: 308px) {
+  .cartheadersec2 h3 {
+    display: inline-block;
+    color: gray;
+    text-align: center;
+    margin-right: 0;
+  }
+}
+@media (max-width: 1131px) {
+  .cartmain {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .shoproduct2 {
+    flex-direction: column;
+    width: 400px;
+    padding: 0 20px;
+    margin: 0;
+  }
+  .showimage2 {
+    width: 100%;
+    margin: 0;
+  }
+  .showimage2 img {
+    object-fit: contain;
+  }
+  .shoproduct2 {
+    padding: 35px 20px;
+    margin: 15px 20px;
+  }
+  .showcontent2 h1 {
+    margin-top: 20px;
+  }
+  .showcontent2 .h4 {
+    margin: 10px 0;
+  }
+  .cartquantity {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .cartcross {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: rgb(251, 87, 87);
+  }
+}
+
+/* cart styling ends */
+
+/* ===================================================================================================================================================================== */
+/* ===================================================================================================================================================================== */
+/* ===================================================================================================================================================================== */
+/* ===================================================================================================================================================================== */
+/* ===================================================================================================================================================================== */
+
+/* cartheader styleing starts */
+.carheader {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 80px;
+  background-color: rgb(191, 191, 191);
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  left: 0;
+}
+.carth1 {
+  margin-left: 35px;
+  color: white;
+  text-transform: uppercase;
+}
+.cartheadersec2 {
+  margin-right: 30px;
+}
+.cartheaderbtn {
+  padding: 8px 20px;
+  background-color: white;
+  color: rgb(0, 228, 228);
+  font-weight: bold;
+  border: 2px solid aqua;
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  margin-right: 6px;
+  outline: none;
+  transition: all 0.2s linear;
+}
+.cartheaderbtn2 {
+  padding: 8px 20px;
+  background-color: white;
+  color: rgb(0, 228, 228);
+  font-weight: bold;
+  border: 2px solid aqua;
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s linear;
+  outline: none;
+}
+.cartheaderbtn:hover {
+  background-color: aqua;
+  color: white;
+}
+.cartheaderbtn2:hover {
+  background-color: aqua;
+  color: white;
+}
+/* cartheader styleing ends */
+
+/* ===================================================================================================================================================================== */
+/* ===================================================================================================================================================================== */
+/* ===================================================================================================================================================================== */
+/* ===================================================================================================================================================================== */
+/* ===================================================================================================================================================================== */
+
+/* profile styling starts */
+
+.profileleftnav {
+  width: 30%;
+  height: auto;
+  min-height: 100vh;
+  background-color: #cabbe9;
+  box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+}
+.profileimgbox {
+  height: 260px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profileimgbox img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+}
+.profileimgbox h3 {
+  color: gray;
+  margin-top: 40px;
+}
+.profilerightnav {
+  width: 70%;
+  height: auto;
+  min-height: 100vh;
+  display: inline-block;
+}
+.profilerightnav h1 {
+  margin-top: 70px;
+  letter-spacing: 3px;
+  color: rgb(205, 205, 205);
+  text-align: center;
+  text-transform: uppercase;
+}
+.profileusingflex {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 830px) {
+  .profileusingflex {
+    display: flex;
+    flex-direction: column;
+  }
+  .profileleftnav {
+    width: 100%;
+    min-height: 100px;
+  }
+  .profilerightnav {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .favmain {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 70px;
+  }
+  .fav1 {
+    width: 10%;
+    padding: 20px;
+    border: 2px solid #dbd5e8;
+    margin: 10px 0;
+    border-radius: 3px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(75deg, white 98%, #efecf5 98%);
+  }
+  .fav1 img {
+    width: 200px;
+    height: 200px;
+  }
+}
+/* profile styling ends */
+
+/* ===================================================================================================================================================================== */
+/* ===================================================================================================================================================================== */
+/* ===================================================================================================================================================================== */
+/* ===================================================================================================================================================================== */
+/* ===================================================================================================================================================================== */
+
+/* profilefav styling starts */
+
+.favmain {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0 70px;
+}
+.fav1 {
+  width: 100%;
+  padding: 20px;
+  border: 2px solid #dbd5e8;
+  margin: 10px 0;
+  border-radius: 3px;
+  position: relative;
+  display: flex;
+  background: linear-gradient(75deg, white 98%, #efecf5 98%);
+}
+.fav1 img {
+  width: 170px;
+  margin-right: 40px;
+  height: 130px;
+  object-fit: contain;
+}
+.fav1div h3 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: rgb(172, 172, 172);
+}
+.fav1div h5 {
+  margin: 10px 0;
+  color: gray;
+  text-transform: uppercase;
+}
+.favicon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: rgb(255, 50, 50);
+}
+/* profilefav styling ends */
+
+/* ===================================================================================================================================================================== */
+/* ===================================================================================================================================================================== */
+/* ===================================================================================================================================================================== */
+/* ===================================================================================================================================================================== */
+/* ===================================================================================================================================================================== */
+
+/* profile footer starts  */
+
+.profilefooter {
+  background-color: #5d5d5a;
+  height: auto;
+  min-height: 300px;
+  color: #b3b3b3;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 80px;
+  margin-top: 100px;
+}
+.pfooterp1 {
+  margin-left: 40px;
+}
+.pfooterp1 h2 {
+  margin-bottom: 30px;
+  margin-top: 50px;
+  color: rgb(218, 204, 176);
+}
+.pfooterp1 h5 {
+  margin: 10px 0;
+}
+
+/* profile footer ends  */
+
+.copyright {
+  height: 50px;
+  line-height: 50px;
+  padding-left: 30px;
+  color: #575151;
+  background-color: rgb(172, 172, 172);
+}
